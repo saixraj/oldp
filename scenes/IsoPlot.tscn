@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://ds0ir8sa8x65l"]
+
+[ext_resource type="Script" uid="uid://gocavehghkwc" path="res://scripts_backup/scripts/IsoPlot.gd" id="1_8uo65"]
+[ext_resource type="Texture2D" uid="uid://i8ltjgfnsqe1" path="res://icon.svg" id="2_2rfn3"]
+
+[node name="IsoPlot" type="Area2D"]
+script = ExtResource("1_8uo65")
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+position = Vector2(-128, -128)
+color = Color(0.3137255, 0.3137255, 0.3137255, 0)
+polygon = PackedVector2Array(128, 96, 64, 128, 128, 160, 192, 128)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(0, -32, 64, 0, 0, 32, -64, 0)
+
+[node name="BuildingSprite" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("2_2rfn3")
+
+[connection signal="mouse_entered" from="." to="." method="mouse_enter"]
+[connection signal="mouse_exited" from="." to="." method="mouse_exit"]

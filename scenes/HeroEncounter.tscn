@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://bvhcsxeypbm0r"]
+
+[ext_resource type="Script" uid="uid://8y6i1sc8d78i" path="res://scripts_backup/scripts/HeroEncounter.gd" id="1_be8li"]
+[ext_resource type="Texture2D" uid="uid://i8ltjgfnsqe1" path="res://icon.svg" id="1_h3hnr"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_be8li"]
+radius = 61.0
+
+[node name="HeroEncounter" type="Area2D"]
+script = ExtResource("1_be8li")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-2, -6)
+texture = ExtResource("1_h3hnr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_be8li")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -43.0
+offset_top = 68.0
+offset_right = 50.0
+offset_bottom = 91.0
+text = "hero enemy"

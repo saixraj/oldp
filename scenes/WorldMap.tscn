@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://hggre1ttyim1"]
+
+[ext_resource type="Script" uid="uid://bj3wf6k2pxs1b" path="res://scenes/world_map.gd" id="1_pj4xh"]
+[ext_resource type="Texture2D" uid="uid://clbyaqcs5jo83" path="res://Gemini_Generated_Image_86ll7t86ll7t86ll.png" id="2_0laof"]
+[ext_resource type="PackedScene" uid="uid://iq5l722x05p6" path="res://scenes/EnemyUnit.tscn" id="3_8rtnk"]
+[ext_resource type="PackedScene" uid="uid://bvhcsxeypbm0r" path="res://scenes/HeroEncounter.tscn" id="4_pj4xh"]
+
+[node name="WorldMap" type="Node2D"]
+y_sort_enabled = true
+script = ExtResource("1_pj4xh")
+
+[node name="MapTexture" type="Sprite2D" parent="."]
+position = Vector2(0, -4)
+texture = ExtResource("2_0laof")
+centered = false
+
+[node name="EnemyUnit" parent="." instance=ExtResource("3_8rtnk")]
+position = Vector2(928, 224)
+
+[node name="EnemyUnit2" parent="." instance=ExtResource("3_8rtnk")]
+position = Vector2(740, 167)
+
+[node name="HeroEncounter" parent="." instance=ExtResource("4_pj4xh")]
+position = Vector2(93, 91)
+
+[node name="Camera2D" type="Camera2D" parent="."]

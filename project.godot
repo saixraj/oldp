@@ -1,0 +1,26 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="pt"
+run/main_scene="uid://do5qbvqax735o"
+config/features=PackedStringArray("4.5", "Forward Plus")
+config/icon="res://icon.svg"
+
+[autoload]
+
+GameData="*res://data/GameData.gd"
+Global="*res://Global.gd"
+SaveManager="*res://scripts_backup/scripts/NetworkManager.gd"
+ServerMock="*res://scripts_backup/scripts/ServerMock.gd"
+CombatSystem="*res://scripts_backup/scripts/CombatManager.gd"
+HeroManager="*res://scripts_backup/scripts/HeroManager.gd"
+GuildManager="*res://scripts_backup/scripts/GuildManager.gd"

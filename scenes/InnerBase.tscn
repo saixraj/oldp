@@ -1,0 +1,2422 @@
+[gd_scene load_steps=6 format=3 uid="uid://uh0os1q211eu"]
+
+[ext_resource type="Script" uid="uid://bg1s1nhrq3dpf" path="res://scenes/inner_base.gd" id="1_ygc2b"]
+[ext_resource type="PackedScene" uid="uid://dh2k4u8nvwya4" path="res://scenes/TrainMenu.tscn" id="2_20ax3"]
+[ext_resource type="Texture2D" uid="uid://c7wwflqeotj2a" path="res://Gemini_Generated_Image_vjvpy6vjvpy6vjvp.png" id="2_a3sie"]
+[ext_resource type="PackedScene" uid="uid://da4g3uxashjl4" path="res://scenes/BuildMenu.tscn" id="2_wiah3"]
+[ext_resource type="PackedScene" uid="uid://ds0ir8sa8x65l" path="res://scenes/IsoPlot.tscn" id="3_hdrv3"]
+
+[node name="InnerBase" type="Node2D"]
+script = ExtResource("1_ygc2b")
+
+[node name="TrainMenu" parent="." instance=ExtResource("2_20ax3")]
+
+[node name="BuildMenu" parent="." instance=ExtResource("2_wiah3")]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(521, 473)
+texture = ExtResource("2_a3sie")
+metadata/_edit_lock_ = true
+
+[node name="ReturnToMap" type="Button" parent="."]
+offset_left = 975.0
+offset_top = 574.0
+offset_right = 1098.0
+offset_bottom = 605.0
+text = "Return To Map"
+metadata/_edit_use_anchors_ = true
+
+[node name="Buildings" type="Node2D" parent="."]
+y_sort_enabled = true
+
+[node name="PlotsContainer" type="Node2D" parent="."]
+
+[node name="IsoPlot" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(51, 6)
+
+[node name="IsoPlot2" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(119, -28)
+
+[node name="IsoPlot3" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(188, -62)
+
+[node name="IsoPlot4" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(256, -96)
+
+[node name="IsoPlot5" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(118, 37)
+
+[node name="IsoPlot6" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(186, 3)
+
+[node name="IsoPlot7" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(255, -31)
+
+[node name="IsoPlot8" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(323, -65)
+
+[node name="IsoPlot9" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(187, 70)
+
+[node name="IsoPlot10" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(255, 36)
+
+[node name="IsoPlot11" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(324, 2)
+
+[node name="IsoPlot12" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(392, -32)
+
+[node name="IsoPlot13" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(254, 101)
+
+[node name="IsoPlot14" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(322, 67)
+
+[node name="IsoPlot15" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(391, 33)
+
+[node name="IsoPlot16" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(459, -1)
+
+[node name="IsoPlot17" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-225, 140)
+
+[node name="IsoPlot18" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-157, 106)
+
+[node name="IsoPlot19" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-88, 72)
+
+[node name="IsoPlot20" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-20, 38)
+
+[node name="IsoPlot21" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-158, 171)
+
+[node name="IsoPlot22" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-90, 137)
+
+[node name="IsoPlot23" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-21, 103)
+
+[node name="IsoPlot24" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(47, 69)
+
+[node name="IsoPlot25" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-89, 204)
+
+[node name="IsoPlot26" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-21, 170)
+
+[node name="IsoPlot27" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(48, 136)
+
+[node name="IsoPlot28" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(116, 102)
+
+[node name="IsoPlot29" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-22, 235)
+
+[node name="IsoPlot30" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(46, 201)
+
+[node name="IsoPlot31" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(115, 167)
+
+[node name="IsoPlot32" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(183, 133)
+
+[node name="IsoPlot33" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(320, 139)
+
+[node name="IsoPlot34" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(388, 105)
+
+[node name="IsoPlot35" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(457, 71)
+
+[node name="IsoPlot36" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(525, 37)
+
+[node name="IsoPlot37" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(387, 170)
+
+[node name="IsoPlot38" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(455, 136)
+
+[node name="IsoPlot39" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(524, 102)
+
+[node name="IsoPlot40" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(592, 68)
+
+[node name="IsoPlot41" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(456, 203)
+
+[node name="IsoPlot42" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(524, 169)
+
+[node name="IsoPlot43" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(593, 135)
+
+[node name="IsoPlot44" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(661, 101)
+
+[node name="IsoPlot45" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(523, 234)
+
+[node name="IsoPlot46" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(591, 200)
+
+[node name="IsoPlot47" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(660, 166)
+
+[node name="IsoPlot48" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(728, 132)
+
+[node name="IsoPlot49" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(44, 273)
+
+[node name="IsoPlot50" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(112, 239)
+
+[node name="IsoPlot51" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(181, 205)
+
+[node name="IsoPlot52" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(249, 171)
+
+[node name="IsoPlot53" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(111, 304)
+
+[node name="IsoPlot54" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(179, 270)
+
+[node name="IsoPlot55" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(248, 236)
+
+[node name="IsoPlot56" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(316, 202)
+
+[node name="IsoPlot57" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(180, 337)
+
+[node name="IsoPlot58" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(248, 303)
+
+[node name="IsoPlot59" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(317, 269)
+
+[node name="IsoPlot60" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(385, 235)
+
+[node name="IsoPlot61" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(247, 368)
+
+[node name="IsoPlot62" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(315, 334)
+
+[node name="IsoPlot63" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(384, 300)
+
+[node name="IsoPlot64" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(452, 266)
+
+[node name="IsoPlot65" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(594, 275)
+
+[node name="IsoPlot66" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(662, 241)
+
+[node name="IsoPlot67" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(731, 207)
+
+[node name="IsoPlot68" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(799, 173)
+
+[node name="IsoPlot69" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(661, 306)
+
+[node name="IsoPlot70" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(729, 272)
+
+[node name="IsoPlot71" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(798, 238)
+
+[node name="IsoPlot72" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(866, 204)
+
+[node name="IsoPlot73" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(730, 339)
+
+[node name="IsoPlot74" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(798, 305)
+
+[node name="IsoPlot75" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(867, 271)
+
+[node name="IsoPlot76" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(935, 237)
+
+[node name="IsoPlot77" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(797, 370)
+
+[node name="IsoPlot78" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(865, 336)
+
+[node name="IsoPlot79" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(934, 302)
+
+[node name="IsoPlot80" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1002, 268)
+
+[node name="IsoPlot81" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(318, 409)
+
+[node name="IsoPlot82" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(386, 375)
+
+[node name="IsoPlot83" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(455, 341)
+
+[node name="IsoPlot84" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(523, 307)
+
+[node name="IsoPlot85" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(385, 440)
+
+[node name="IsoPlot86" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(453, 406)
+
+[node name="IsoPlot87" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(522, 372)
+
+[node name="IsoPlot88" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(590, 338)
+
+[node name="IsoPlot89" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(454, 473)
+
+[node name="IsoPlot90" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(522, 439)
+
+[node name="IsoPlot91" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(591, 405)
+
+[node name="IsoPlot92" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(659, 371)
+
+[node name="IsoPlot93" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(521, 504)
+
+[node name="IsoPlot94" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(589, 470)
+
+[node name="IsoPlot95" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(658, 436)
+
+[node name="IsoPlot96" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(726, 402)
+
+[node name="IsoPlot97" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(863, 408)
+
+[node name="IsoPlot98" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(931, 374)
+
+[node name="IsoPlot99" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1000, 340)
+
+[node name="IsoPlot100" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1068, 306)
+
+[node name="IsoPlot101" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(930, 439)
+
+[node name="IsoPlot102" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(998, 405)
+
+[node name="IsoPlot103" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1067, 371)
+
+[node name="IsoPlot104" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1135, 337)
+
+[node name="IsoPlot105" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(999, 472)
+
+[node name="IsoPlot106" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1067, 438)
+
+[node name="IsoPlot107" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1136, 404)
+
+[node name="IsoPlot108" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1204, 370)
+
+[node name="IsoPlot109" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1066, 503)
+
+[node name="IsoPlot110" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1134, 469)
+
+[node name="IsoPlot111" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1203, 435)
+
+[node name="IsoPlot112" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1271, 401)
+
+[node name="IsoPlot113" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(587, 542)
+
+[node name="IsoPlot114" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(655, 508)
+
+[node name="IsoPlot115" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(724, 474)
+
+[node name="IsoPlot116" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(792, 440)
+
+[node name="IsoPlot117" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(654, 573)
+
+[node name="IsoPlot118" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(722, 539)
+
+[node name="IsoPlot119" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(791, 505)
+
+[node name="IsoPlot120" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(859, 471)
+
+[node name="IsoPlot121" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(723, 606)
+
+[node name="IsoPlot122" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(791, 572)
+
+[node name="IsoPlot123" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(860, 538)
+
+[node name="IsoPlot124" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(928, 504)
+
+[node name="IsoPlot125" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(790, 637)
+
+[node name="IsoPlot126" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(858, 603)
+
+[node name="IsoPlot127" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(927, 569)
+
+[node name="IsoPlot128" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(995, 535)
+
+[node name="IsoPlot129" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-496, 280)
+
+[node name="IsoPlot130" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-428, 246)
+
+[node name="IsoPlot131" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-359, 212)
+
+[node name="IsoPlot132" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-291, 178)
+
+[node name="IsoPlot133" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-429, 311)
+
+[node name="IsoPlot134" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-361, 277)
+
+[node name="IsoPlot135" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-292, 243)
+
+[node name="IsoPlot136" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-224, 209)
+
+[node name="IsoPlot137" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-360, 344)
+
+[node name="IsoPlot138" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-292, 310)
+
+[node name="IsoPlot139" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-223, 276)
+
+[node name="IsoPlot140" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-155, 242)
+
+[node name="IsoPlot141" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-293, 375)
+
+[node name="IsoPlot142" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-225, 341)
+
+[node name="IsoPlot143" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-156, 307)
+
+[node name="IsoPlot144" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-88, 273)
+
+[node name="IsoPlot145" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-772, 414)
+
+[node name="IsoPlot146" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-704, 380)
+
+[node name="IsoPlot147" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-635, 346)
+
+[node name="IsoPlot148" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-567, 312)
+
+[node name="IsoPlot149" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-705, 445)
+
+[node name="IsoPlot150" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-637, 411)
+
+[node name="IsoPlot151" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-568, 377)
+
+[node name="IsoPlot152" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-500, 343)
+
+[node name="IsoPlot153" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-636, 478)
+
+[node name="IsoPlot154" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-568, 444)
+
+[node name="IsoPlot155" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-499, 410)
+
+[node name="IsoPlot156" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-431, 376)
+
+[node name="IsoPlot157" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-569, 509)
+
+[node name="IsoPlot158" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-501, 475)
+
+[node name="IsoPlot159" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-432, 441)
+
+[node name="IsoPlot160" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-364, 407)
+
+[node name="IsoPlot927" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-775, -269)
+
+[node name="IsoPlot931" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-708, -238)
+
+[node name="IsoPlot932" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-640, -272)
+
+[node name="IsoPlot935" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-639, -205)
+
+[node name="IsoPlot936" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-571, -239)
+
+[node name="IsoPlot937" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-502, -273)
+
+[node name="IsoPlot939" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-572, -174)
+
+[node name="IsoPlot940" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-504, -208)
+
+[node name="IsoPlot941" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-435, -242)
+
+[node name="IsoPlot946" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-846, -237)
+
+[node name="IsoPlot949" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-847, -172)
+
+[node name="IsoPlot950" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-779, -206)
+
+[node name="IsoPlot952" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-847, -105)
+
+[node name="IsoPlot953" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-778, -139)
+
+[node name="IsoPlot954" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-710, -173)
+
+[node name="IsoPlot955" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-848, -40)
+
+[node name="IsoPlot956" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-780, -74)
+
+[node name="IsoPlot957" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-711, -108)
+
+[node name="IsoPlot958" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-643, -142)
+
+[node name="IsoPlot959" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-503, -141)
+
+[node name="IsoPlot960" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-435, -175)
+
+[node name="IsoPlot961" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-366, -209)
+
+[node name="IsoPlot962" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-298, -243)
+
+[node name="IsoPlot963" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-436, -110)
+
+[node name="IsoPlot964" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-368, -144)
+
+[node name="IsoPlot965" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-299, -178)
+
+[node name="IsoPlot966" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-231, -212)
+
+[node name="IsoPlot967" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-367, -77)
+
+[node name="IsoPlot968" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-299, -111)
+
+[node name="IsoPlot969" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-230, -145)
+
+[node name="IsoPlot970" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-162, -179)
+
+[node name="IsoPlot971" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-300, -46)
+
+[node name="IsoPlot972" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-232, -80)
+
+[node name="IsoPlot973" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-163, -114)
+
+[node name="IsoPlot974" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-95, -148)
+
+[node name="IsoPlot975" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-779, -7)
+
+[node name="IsoPlot976" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-711, -41)
+
+[node name="IsoPlot977" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-642, -75)
+
+[node name="IsoPlot978" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-574, -109)
+
+[node name="IsoPlot979" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-712, 24)
+
+[node name="IsoPlot980" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-644, -10)
+
+[node name="IsoPlot981" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-575, -44)
+
+[node name="IsoPlot982" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-507, -78)
+
+[node name="IsoPlot983" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-643, 57)
+
+[node name="IsoPlot984" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-575, 23)
+
+[node name="IsoPlot985" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-506, -11)
+
+[node name="IsoPlot986" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-438, -45)
+
+[node name="IsoPlot987" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-576, 88)
+
+[node name="IsoPlot988" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-508, 54)
+
+[node name="IsoPlot989" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-439, 20)
+
+[node name="IsoPlot990" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-371, -14)
+
+[node name="IsoPlot991" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-511, 823)
+
+[node name="IsoPlot992" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-443, 789)
+
+[node name="IsoPlot993" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-374, 755)
+
+[node name="IsoPlot994" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-306, 721)
+
+[node name="IsoPlot995" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-444, 854)
+
+[node name="IsoPlot996" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-376, 820)
+
+[node name="IsoPlot997" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-307, 786)
+
+[node name="IsoPlot998" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-239, 752)
+
+[node name="IsoPlot999" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-375, 887)
+
+[node name="IsoPlot1000" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-307, 853)
+
+[node name="IsoPlot1001" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-238, 819)
+
+[node name="IsoPlot1002" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-170, 785)
+
+[node name="IsoPlot1003" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-308, 918)
+
+[node name="IsoPlot1004" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-240, 884)
+
+[node name="IsoPlot1005" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-171, 850)
+
+[node name="IsoPlot1006" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-103, 816)
+
+[node name="IsoPlot1007" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-787, 957)
+
+[node name="IsoPlot1008" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-719, 923)
+
+[node name="IsoPlot1009" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-650, 889)
+
+[node name="IsoPlot1010" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-582, 855)
+
+[node name="IsoPlot1011" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-720, 988)
+
+[node name="IsoPlot1012" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-652, 954)
+
+[node name="IsoPlot1013" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-583, 920)
+
+[node name="IsoPlot1014" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-515, 886)
+
+[node name="IsoPlot1015" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-651, 1021)
+
+[node name="IsoPlot1016" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-583, 987)
+
+[node name="IsoPlot1017" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-514, 953)
+
+[node name="IsoPlot1018" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-446, 919)
+
+[node name="IsoPlot1019" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-584, 1052)
+
+[node name="IsoPlot1020" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-516, 1018)
+
+[node name="IsoPlot1021" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-447, 984)
+
+[node name="IsoPlot1022" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-379, 950)
+
+[node name="IsoPlot1023" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-777, 691)
+
+[node name="IsoPlot1024" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-709, 657)
+
+[node name="IsoPlot1025" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-640, 623)
+
+[node name="IsoPlot1026" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-572, 589)
+
+[node name="IsoPlot1027" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-710, 722)
+
+[node name="IsoPlot1028" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-642, 688)
+
+[node name="IsoPlot1029" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-573, 654)
+
+[node name="IsoPlot1030" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-505, 620)
+
+[node name="IsoPlot1031" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-641, 755)
+
+[node name="IsoPlot1032" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-573, 721)
+
+[node name="IsoPlot1033" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-504, 687)
+
+[node name="IsoPlot1034" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-436, 653)
+
+[node name="IsoPlot1035" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-574, 786)
+
+[node name="IsoPlot1036" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-506, 752)
+
+[node name="IsoPlot1037" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-437, 718)
+
+[node name="IsoPlot1038" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-369, 684)
+
+[node name="IsoPlot1046" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-781, 754)
+
+[node name="IsoPlot1049" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-780, 821)
+
+[node name="IsoPlot1050" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-712, 787)
+
+[node name="IsoPlot1052" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-782, 886)
+
+[node name="IsoPlot1053" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-713, 852)
+
+[node name="IsoPlot1054" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-645, 818)
+
+[node name="IsoPlot1055" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-233, 959)
+
+[node name="IsoPlot1056" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-165, 925)
+
+[node name="IsoPlot1057" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-96, 891)
+
+[node name="IsoPlot1058" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-28, 857)
+
+[node name="IsoPlot1059" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-166, 990)
+
+[node name="IsoPlot1060" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-98, 956)
+
+[node name="IsoPlot1061" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-29, 922)
+
+[node name="IsoPlot1062" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(39, 888)
+
+[node name="IsoPlot1063" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-97, 1023)
+
+[node name="IsoPlot1064" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-29, 989)
+
+[node name="IsoPlot1065" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(40, 955)
+
+[node name="IsoPlot1066" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(108, 921)
+
+[node name="IsoPlot1067" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-30, 1054)
+
+[node name="IsoPlot1068" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(38, 1020)
+
+[node name="IsoPlot1069" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(107, 986)
+
+[node name="IsoPlot1070" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(175, 952)
+
+[node name="IsoPlot1071" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-509, 1093)
+
+[node name="IsoPlot1072" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-441, 1059)
+
+[node name="IsoPlot1073" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-372, 1025)
+
+[node name="IsoPlot1074" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-304, 991)
+
+[node name="IsoPlot1075" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-442, 1124)
+
+[node name="IsoPlot1076" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-374, 1090)
+
+[node name="IsoPlot1077" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-305, 1056)
+
+[node name="IsoPlot1078" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-237, 1022)
+
+[node name="IsoPlot1079" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-373, 1157)
+
+[node name="IsoPlot1080" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-305, 1123)
+
+[node name="IsoPlot1081" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-236, 1089)
+
+[node name="IsoPlot1082" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-168, 1055)
+
+[node name="IsoPlot1083" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-306, 1188)
+
+[node name="IsoPlot1084" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-238, 1154)
+
+[node name="IsoPlot1085" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-169, 1120)
+
+[node name="IsoPlot1086" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-101, 1086)
+
+[node name="IsoPlot1087" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(35, 1092)
+
+[node name="IsoPlot1088" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(103, 1058)
+
+[node name="IsoPlot1089" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(172, 1024)
+
+[node name="IsoPlot1090" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(240, 990)
+
+[node name="IsoPlot1091" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(102, 1123)
+
+[node name="IsoPlot1092" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(170, 1089)
+
+[node name="IsoPlot1093" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(239, 1055)
+
+[node name="IsoPlot1094" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(307, 1021)
+
+[node name="IsoPlot1095" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(171, 1156)
+
+[node name="IsoPlot1096" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(239, 1122)
+
+[node name="IsoPlot1097" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(308, 1088)
+
+[node name="IsoPlot1098" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(376, 1054)
+
+[node name="IsoPlot1099" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(238, 1187)
+
+[node name="IsoPlot1100" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(306, 1153)
+
+[node name="IsoPlot1101" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(375, 1119)
+
+[node name="IsoPlot1102" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(443, 1085)
+
+[node name="IsoPlot1103" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-241, 1226)
+
+[node name="IsoPlot1104" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-173, 1192)
+
+[node name="IsoPlot1105" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-104, 1158)
+
+[node name="IsoPlot1106" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-36, 1124)
+
+[node name="IsoPlot1108" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-106, 1223)
+
+[node name="IsoPlot1109" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-37, 1189)
+
+[node name="IsoPlot1110" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(31, 1155)
+
+[node name="IsoPlot1113" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(32, 1222)
+
+[node name="IsoPlot1114" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(100, 1188)
+
+[node name="IsoPlot1118" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(167, 1219)
+
+[node name="IsoPlot161" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-227, 413)
+
+[node name="IsoPlot162" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-159, 379)
+
+[node name="IsoPlot163" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-90, 345)
+
+[node name="IsoPlot164" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-22, 311)
+
+[node name="IsoPlot165" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-160, 444)
+
+[node name="IsoPlot166" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-92, 410)
+
+[node name="IsoPlot167" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-23, 376)
+
+[node name="IsoPlot168" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(45, 342)
+
+[node name="IsoPlot169" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-91, 477)
+
+[node name="IsoPlot170" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-23, 443)
+
+[node name="IsoPlot171" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(46, 409)
+
+[node name="IsoPlot172" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(114, 375)
+
+[node name="IsoPlot173" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-24, 508)
+
+[node name="IsoPlot174" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(44, 474)
+
+[node name="IsoPlot175" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(113, 440)
+
+[node name="IsoPlot176" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(181, 406)
+
+[node name="IsoPlot177" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-503, 547)
+
+[node name="IsoPlot178" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-435, 513)
+
+[node name="IsoPlot179" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-366, 479)
+
+[node name="IsoPlot180" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-298, 445)
+
+[node name="IsoPlot181" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-436, 578)
+
+[node name="IsoPlot182" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-368, 544)
+
+[node name="IsoPlot183" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-299, 510)
+
+[node name="IsoPlot184" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-231, 476)
+
+[node name="IsoPlot185" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-367, 611)
+
+[node name="IsoPlot186" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-299, 577)
+
+[node name="IsoPlot187" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-230, 543)
+
+[node name="IsoPlot188" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-162, 509)
+
+[node name="IsoPlot189" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-300, 642)
+
+[node name="IsoPlot190" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-232, 608)
+
+[node name="IsoPlot191" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-163, 574)
+
+[node name="IsoPlot192" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-95, 540)
+
+[node name="IsoPlot193" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(47, 549)
+
+[node name="IsoPlot194" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(115, 515)
+
+[node name="IsoPlot195" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(184, 481)
+
+[node name="IsoPlot196" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(252, 447)
+
+[node name="IsoPlot197" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(114, 580)
+
+[node name="IsoPlot198" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(182, 546)
+
+[node name="IsoPlot199" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(251, 512)
+
+[node name="IsoPlot200" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(319, 478)
+
+[node name="IsoPlot201" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(183, 613)
+
+[node name="IsoPlot202" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(251, 579)
+
+[node name="IsoPlot203" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(320, 545)
+
+[node name="IsoPlot204" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(388, 511)
+
+[node name="IsoPlot205" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(250, 644)
+
+[node name="IsoPlot206" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(318, 610)
+
+[node name="IsoPlot207" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(387, 576)
+
+[node name="IsoPlot208" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(455, 542)
+
+[node name="IsoPlot209" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-229, 683)
+
+[node name="IsoPlot210" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-161, 649)
+
+[node name="IsoPlot211" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-92, 615)
+
+[node name="IsoPlot212" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-24, 581)
+
+[node name="IsoPlot213" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-162, 714)
+
+[node name="IsoPlot214" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-94, 680)
+
+[node name="IsoPlot215" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-25, 646)
+
+[node name="IsoPlot216" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(43, 612)
+
+[node name="IsoPlot217" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-93, 747)
+
+[node name="IsoPlot218" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-25, 713)
+
+[node name="IsoPlot219" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(44, 679)
+
+[node name="IsoPlot220" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(112, 645)
+
+[node name="IsoPlot221" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(-26, 778)
+
+[node name="IsoPlot222" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(42, 744)
+
+[node name="IsoPlot223" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(111, 710)
+
+[node name="IsoPlot224" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(179, 676)
+
+[node name="IsoPlot225" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(316, 682)
+
+[node name="IsoPlot226" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(384, 648)
+
+[node name="IsoPlot227" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(453, 614)
+
+[node name="IsoPlot228" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(521, 580)
+
+[node name="IsoPlot229" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(383, 713)
+
+[node name="IsoPlot230" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(451, 679)
+
+[node name="IsoPlot231" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(520, 645)
+
+[node name="IsoPlot232" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(588, 611)
+
+[node name="IsoPlot233" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(452, 746)
+
+[node name="IsoPlot234" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(520, 712)
+
+[node name="IsoPlot235" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(589, 678)
+
+[node name="IsoPlot236" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(657, 644)
+
+[node name="IsoPlot237" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(519, 777)
+
+[node name="IsoPlot238" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(587, 743)
+
+[node name="IsoPlot239" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(656, 709)
+
+[node name="IsoPlot240" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(724, 675)
+
+[node name="IsoPlot241" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(40, 816)
+
+[node name="IsoPlot242" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(108, 782)
+
+[node name="IsoPlot243" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(177, 748)
+
+[node name="IsoPlot244" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(245, 714)
+
+[node name="IsoPlot245" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(107, 847)
+
+[node name="IsoPlot246" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(175, 813)
+
+[node name="IsoPlot247" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(244, 779)
+
+[node name="IsoPlot248" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(312, 745)
+
+[node name="IsoPlot249" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(176, 880)
+
+[node name="IsoPlot250" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(244, 846)
+
+[node name="IsoPlot251" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(313, 812)
+
+[node name="IsoPlot252" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(381, 778)
+
+[node name="IsoPlot253" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(243, 911)
+
+[node name="IsoPlot254" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(311, 877)
+
+[node name="IsoPlot255" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(380, 843)
+
+[node name="IsoPlot256" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(448, 809)
+
+[node name="IsoPlot257" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1132, 537)
+
+[node name="IsoPlot258" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1200, 503)
+
+[node name="IsoPlot259" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1269, 469)
+
+[node name="IsoPlot260" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1337, 435)
+
+[node name="IsoPlot261" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1199, 568)
+
+[node name="IsoPlot262" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1267, 534)
+
+[node name="IsoPlot263" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1336, 500)
+
+[node name="IsoPlot264" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1404, 466)
+
+[node name="IsoPlot265" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1268, 601)
+
+[node name="IsoPlot266" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1336, 567)
+
+[node name="IsoPlot267" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1405, 533)
+
+[node name="IsoPlot268" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1473, 499)
+
+[node name="IsoPlot269" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1335, 632)
+
+[node name="IsoPlot270" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1403, 598)
+
+[node name="IsoPlot271" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1472, 564)
+
+[node name="IsoPlot272" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1540, 530)
+
+[node name="IsoPlot273" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(856, 671)
+
+[node name="IsoPlot274" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(924, 637)
+
+[node name="IsoPlot275" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(993, 603)
+
+[node name="IsoPlot276" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1061, 569)
+
+[node name="IsoPlot277" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(923, 702)
+
+[node name="IsoPlot278" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(991, 668)
+
+[node name="IsoPlot279" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1060, 634)
+
+[node name="IsoPlot280" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1128, 600)
+
+[node name="IsoPlot281" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(992, 735)
+
+[node name="IsoPlot282" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1060, 701)
+
+[node name="IsoPlot283" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1129, 667)
+
+[node name="IsoPlot284" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1197, 633)
+
+[node name="IsoPlot285" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1059, 766)
+
+[node name="IsoPlot286" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1127, 732)
+
+[node name="IsoPlot287" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1196, 698)
+
+[node name="IsoPlot288" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1264, 664)
+
+[node name="IsoPlot289" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1401, 670)
+
+[node name="IsoPlot290" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1469, 636)
+
+[node name="IsoPlot291" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1538, 602)
+
+[node name="IsoPlot292" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1606, 568)
+
+[node name="IsoPlot293" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1468, 701)
+
+[node name="IsoPlot294" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1536, 667)
+
+[node name="IsoPlot295" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1605, 633)
+
+[node name="IsoPlot296" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1673, 599)
+
+[node name="IsoPlot297" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1537, 734)
+
+[node name="IsoPlot298" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1605, 700)
+
+[node name="IsoPlot299" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1674, 666)
+
+[node name="IsoPlot300" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1742, 632)
+
+[node name="IsoPlot301" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1604, 765)
+
+[node name="IsoPlot302" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1672, 731)
+
+[node name="IsoPlot303" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1741, 697)
+
+[node name="IsoPlot304" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1809, 663)
+
+[node name="IsoPlot305" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1125, 804)
+
+[node name="IsoPlot306" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1193, 770)
+
+[node name="IsoPlot307" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1262, 736)
+
+[node name="IsoPlot308" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1330, 702)
+
+[node name="IsoPlot309" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1192, 835)
+
+[node name="IsoPlot310" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1260, 801)
+
+[node name="IsoPlot311" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1329, 767)
+
+[node name="IsoPlot312" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1397, 733)
+
+[node name="IsoPlot313" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1261, 868)
+
+[node name="IsoPlot314" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1329, 834)
+
+[node name="IsoPlot315" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1398, 800)
+
+[node name="IsoPlot316" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1466, 766)
+
+[node name="IsoPlot317" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1328, 899)
+
+[node name="IsoPlot318" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1396, 865)
+
+[node name="IsoPlot319" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1465, 831)
+
+[node name="IsoPlot320" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1533, 797)
+
+[node name="IsoPlot321" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1675, 806)
+
+[node name="IsoPlot322" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1743, 772)
+
+[node name="IsoPlot323" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1812, 738)
+
+[node name="IsoPlot325" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1742, 837)
+
+[node name="IsoPlot326" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1810, 803)
+
+[node name="IsoPlot329" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1811, 870)
+
+[node name="IsoPlot337" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1399, 940)
+
+[node name="IsoPlot338" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1467, 906)
+
+[node name="IsoPlot339" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1536, 872)
+
+[node name="IsoPlot340" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1604, 838)
+
+[node name="IsoPlot341" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1466, 971)
+
+[node name="IsoPlot342" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1534, 937)
+
+[node name="IsoPlot343" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1603, 903)
+
+[node name="IsoPlot344" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1671, 869)
+
+[node name="IsoPlot345" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1535, 1004)
+
+[node name="IsoPlot346" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1603, 970)
+
+[node name="IsoPlot347" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1672, 936)
+
+[node name="IsoPlot348" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1740, 902)
+
+[node name="IsoPlot349" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1602, 1035)
+
+[node name="IsoPlot350" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1670, 1001)
+
+[node name="IsoPlot351" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1739, 967)
+
+[node name="IsoPlot352" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1807, 933)
+
+[node name="IsoPlot369" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1668, 1073)
+
+[node name="IsoPlot370" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1736, 1039)
+
+[node name="IsoPlot371" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1805, 1005)
+
+[node name="IsoPlot373" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1735, 1104)
+
+[node name="IsoPlot374" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1803, 1070)
+
+[node name="IsoPlot377" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1804, 1137)
+
+[node name="IsoPlot385" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(585, 811)
+
+[node name="IsoPlot386" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(653, 777)
+
+[node name="IsoPlot387" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(722, 743)
+
+[node name="IsoPlot388" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(790, 709)
+
+[node name="IsoPlot389" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(652, 842)
+
+[node name="IsoPlot390" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(720, 808)
+
+[node name="IsoPlot391" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(789, 774)
+
+[node name="IsoPlot392" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(857, 740)
+
+[node name="IsoPlot393" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(721, 875)
+
+[node name="IsoPlot394" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(789, 841)
+
+[node name="IsoPlot395" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(858, 807)
+
+[node name="IsoPlot396" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(926, 773)
+
+[node name="IsoPlot397" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(788, 906)
+
+[node name="IsoPlot398" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(856, 872)
+
+[node name="IsoPlot399" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(925, 838)
+
+[node name="IsoPlot400" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(993, 804)
+
+[node name="IsoPlot401" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(309, 945)
+
+[node name="IsoPlot402" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(377, 911)
+
+[node name="IsoPlot403" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(446, 877)
+
+[node name="IsoPlot404" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(514, 843)
+
+[node name="IsoPlot405" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(376, 976)
+
+[node name="IsoPlot406" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(444, 942)
+
+[node name="IsoPlot407" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(513, 908)
+
+[node name="IsoPlot408" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(581, 874)
+
+[node name="IsoPlot409" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(445, 1009)
+
+[node name="IsoPlot410" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(513, 975)
+
+[node name="IsoPlot411" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(582, 941)
+
+[node name="IsoPlot412" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(650, 907)
+
+[node name="IsoPlot413" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(512, 1040)
+
+[node name="IsoPlot414" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(580, 1006)
+
+[node name="IsoPlot415" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(649, 972)
+
+[node name="IsoPlot416" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(717, 938)
+
+[node name="IsoPlot417" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(854, 944)
+
+[node name="IsoPlot418" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(922, 910)
+
+[node name="IsoPlot419" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(991, 876)
+
+[node name="IsoPlot420" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1059, 842)
+
+[node name="IsoPlot421" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(921, 975)
+
+[node name="IsoPlot422" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(989, 941)
+
+[node name="IsoPlot423" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1058, 907)
+
+[node name="IsoPlot424" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1126, 873)
+
+[node name="IsoPlot425" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(990, 1008)
+
+[node name="IsoPlot426" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1058, 974)
+
+[node name="IsoPlot427" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1127, 940)
+
+[node name="IsoPlot428" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1195, 906)
+
+[node name="IsoPlot429" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1057, 1039)
+
+[node name="IsoPlot430" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1125, 1005)
+
+[node name="IsoPlot431" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1194, 971)
+
+[node name="IsoPlot432" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1262, 937)
+
+[node name="IsoPlot433" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(578, 1078)
+
+[node name="IsoPlot434" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(646, 1044)
+
+[node name="IsoPlot435" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(715, 1010)
+
+[node name="IsoPlot436" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(783, 976)
+
+[node name="IsoPlot437" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(645, 1109)
+
+[node name="IsoPlot438" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(713, 1075)
+
+[node name="IsoPlot439" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(782, 1041)
+
+[node name="IsoPlot440" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(850, 1007)
+
+[node name="IsoPlot441" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(714, 1142)
+
+[node name="IsoPlot442" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(782, 1108)
+
+[node name="IsoPlot443" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(851, 1074)
+
+[node name="IsoPlot444" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(919, 1040)
+
+[node name="IsoPlot445" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(781, 1173)
+
+[node name="IsoPlot446" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(849, 1139)
+
+[node name="IsoPlot447" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(918, 1105)
+
+[node name="IsoPlot448" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(986, 1071)
+
+[node name="IsoPlot449" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1128, 1080)
+
+[node name="IsoPlot450" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1196, 1046)
+
+[node name="IsoPlot451" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1265, 1012)
+
+[node name="IsoPlot452" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1333, 978)
+
+[node name="IsoPlot453" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1195, 1111)
+
+[node name="IsoPlot454" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1263, 1077)
+
+[node name="IsoPlot455" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1332, 1043)
+
+[node name="IsoPlot456" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1400, 1009)
+
+[node name="IsoPlot457" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1264, 1144)
+
+[node name="IsoPlot458" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1332, 1110)
+
+[node name="IsoPlot459" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1401, 1076)
+
+[node name="IsoPlot460" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1469, 1042)
+
+[node name="IsoPlot461" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1331, 1175)
+
+[node name="IsoPlot462" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1399, 1141)
+
+[node name="IsoPlot463" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1468, 1107)
+
+[node name="IsoPlot464" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1536, 1073)
+
+[node name="IsoPlot465" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(852, 1214)
+
+[node name="IsoPlot466" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(920, 1180)
+
+[node name="IsoPlot467" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(989, 1146)
+
+[node name="IsoPlot468" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1057, 1112)
+
+[node name="IsoPlot470" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(987, 1211)
+
+[node name="IsoPlot471" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1056, 1177)
+
+[node name="IsoPlot472" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1124, 1143)
+
+[node name="IsoPlot475" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1125, 1210)
+
+[node name="IsoPlot476" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1193, 1176)
+
+[node name="IsoPlot480" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1260, 1207)
+
+[node name="IsoPlot481" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1397, 1213)
+
+[node name="IsoPlot482" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1465, 1179)
+
+[node name="IsoPlot483" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1534, 1145)
+
+[node name="IsoPlot484" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1602, 1111)
+
+[node name="IsoPlot486" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1532, 1210)
+
+[node name="IsoPlot487" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1601, 1176)
+
+[node name="IsoPlot488" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1669, 1142)
+
+[node name="IsoPlot491" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1670, 1209)
+
+[node name="IsoPlot492" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1738, 1175)
+
+[node name="IsoPlot496" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1805, 1206)
+
+[node name="IsoPlot512" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1143, -269)
+
+[node name="IsoPlot516" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1210, -238)
+
+[node name="IsoPlot517" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1278, -272)
+
+[node name="IsoPlot520" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1279, -205)
+
+[node name="IsoPlot521" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1347, -239)
+
+[node name="IsoPlot522" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1416, -273)
+
+[node name="IsoPlot524" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1346, -174)
+
+[node name="IsoPlot525" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1414, -208)
+
+[node name="IsoPlot526" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1483, -242)
+
+[node name="IsoPlot528" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1693, -267)
+
+[node name="IsoPlot532" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1760, -236)
+
+[node name="IsoPlot533" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1828, -270)
+
+[node name="IsoPlot536" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1829, -203)
+
+[node name="IsoPlot544" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1417, -133)
+
+[node name="IsoPlot545" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1485, -167)
+
+[node name="IsoPlot546" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1554, -201)
+
+[node name="IsoPlot547" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1622, -235)
+
+[node name="IsoPlot548" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1484, -102)
+
+[node name="IsoPlot549" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1552, -136)
+
+[node name="IsoPlot550" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1621, -170)
+
+[node name="IsoPlot551" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1689, -204)
+
+[node name="IsoPlot552" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1553, -69)
+
+[node name="IsoPlot553" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1621, -103)
+
+[node name="IsoPlot554" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1690, -137)
+
+[node name="IsoPlot555" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1758, -171)
+
+[node name="IsoPlot556" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1620, -38)
+
+[node name="IsoPlot557" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1688, -72)
+
+[node name="IsoPlot558" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1757, -106)
+
+[node name="IsoPlot559" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1825, -140)
+
+[node name="IsoPlot576" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1686, 0)
+
+[node name="IsoPlot577" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1754, -34)
+
+[node name="IsoPlot578" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1823, -68)
+
+[node name="IsoPlot580" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1753, 31)
+
+[node name="IsoPlot581" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1821, -3)
+
+[node name="IsoPlot584" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1822, 64)
+
+[node name="IsoPlot592" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(603, -262)
+
+[node name="IsoPlot596" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(670, -231)
+
+[node name="IsoPlot597" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(738, -265)
+
+[node name="IsoPlot600" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(739, -198)
+
+[node name="IsoPlot601" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(807, -232)
+
+[node name="IsoPlot602" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(876, -266)
+
+[node name="IsoPlot604" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(806, -167)
+
+[node name="IsoPlot605" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(874, -201)
+
+[node name="IsoPlot606" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(943, -235)
+
+[node name="IsoPlot607" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1011, -269)
+
+[node name="IsoPlot608" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(327, -128)
+
+[node name="IsoPlot609" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(395, -162)
+
+[node name="IsoPlot610" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(464, -196)
+
+[node name="IsoPlot611" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(532, -230)
+
+[node name="IsoPlot612" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(394, -97)
+
+[node name="IsoPlot613" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(462, -131)
+
+[node name="IsoPlot614" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(531, -165)
+
+[node name="IsoPlot615" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(599, -199)
+
+[node name="IsoPlot616" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(463, -64)
+
+[node name="IsoPlot617" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(531, -98)
+
+[node name="IsoPlot618" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(600, -132)
+
+[node name="IsoPlot619" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(668, -166)
+
+[node name="IsoPlot620" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(530, -33)
+
+[node name="IsoPlot621" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(598, -67)
+
+[node name="IsoPlot622" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(667, -101)
+
+[node name="IsoPlot623" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(735, -135)
+
+[node name="IsoPlot624" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(872, -129)
+
+[node name="IsoPlot625" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(940, -163)
+
+[node name="IsoPlot626" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1009, -197)
+
+[node name="IsoPlot627" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1077, -231)
+
+[node name="IsoPlot628" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(939, -98)
+
+[node name="IsoPlot629" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1007, -132)
+
+[node name="IsoPlot630" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1076, -166)
+
+[node name="IsoPlot631" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1144, -200)
+
+[node name="IsoPlot632" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1008, -65)
+
+[node name="IsoPlot633" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1076, -99)
+
+[node name="IsoPlot634" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1145, -133)
+
+[node name="IsoPlot635" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1213, -167)
+
+[node name="IsoPlot636" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1075, -34)
+
+[node name="IsoPlot637" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1143, -68)
+
+[node name="IsoPlot638" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1212, -102)
+
+[node name="IsoPlot639" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1280, -136)
+
+[node name="IsoPlot640" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(596, 5)
+
+[node name="IsoPlot641" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(664, -29)
+
+[node name="IsoPlot642" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(733, -63)
+
+[node name="IsoPlot643" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(801, -97)
+
+[node name="IsoPlot644" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(663, 36)
+
+[node name="IsoPlot645" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(731, 2)
+
+[node name="IsoPlot646" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(800, -32)
+
+[node name="IsoPlot647" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(868, -66)
+
+[node name="IsoPlot648" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(732, 69)
+
+[node name="IsoPlot649" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(800, 35)
+
+[node name="IsoPlot650" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(869, 1)
+
+[node name="IsoPlot651" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(937, -33)
+
+[node name="IsoPlot652" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(799, 100)
+
+[node name="IsoPlot653" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(867, 66)
+
+[node name="IsoPlot654" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(936, 32)
+
+[node name="IsoPlot655" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1004, -2)
+
+[node name="IsoPlot656" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1146, 7)
+
+[node name="IsoPlot657" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1214, -27)
+
+[node name="IsoPlot658" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1283, -61)
+
+[node name="IsoPlot659" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1351, -95)
+
+[node name="IsoPlot660" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1213, 38)
+
+[node name="IsoPlot661" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1281, 4)
+
+[node name="IsoPlot662" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1350, -30)
+
+[node name="IsoPlot663" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1418, -64)
+
+[node name="IsoPlot664" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1282, 71)
+
+[node name="IsoPlot665" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1350, 37)
+
+[node name="IsoPlot666" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1419, 3)
+
+[node name="IsoPlot667" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1487, -31)
+
+[node name="IsoPlot668" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1349, 102)
+
+[node name="IsoPlot669" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1417, 68)
+
+[node name="IsoPlot670" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1486, 34)
+
+[node name="IsoPlot671" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1554, 0)
+
+[node name="IsoPlot672" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(870, 141)
+
+[node name="IsoPlot673" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(938, 107)
+
+[node name="IsoPlot674" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1007, 73)
+
+[node name="IsoPlot675" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1075, 39)
+
+[node name="IsoPlot676" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(937, 172)
+
+[node name="IsoPlot677" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1005, 138)
+
+[node name="IsoPlot678" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1074, 104)
+
+[node name="IsoPlot679" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1142, 70)
+
+[node name="IsoPlot680" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1006, 205)
+
+[node name="IsoPlot681" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1074, 171)
+
+[node name="IsoPlot682" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1143, 137)
+
+[node name="IsoPlot683" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1211, 103)
+
+[node name="IsoPlot684" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1073, 236)
+
+[node name="IsoPlot685" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1141, 202)
+
+[node name="IsoPlot686" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1210, 168)
+
+[node name="IsoPlot687" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1278, 134)
+
+[node name="IsoPlot688" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1415, 140)
+
+[node name="IsoPlot689" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1483, 106)
+
+[node name="IsoPlot690" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1552, 72)
+
+[node name="IsoPlot691" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1620, 38)
+
+[node name="IsoPlot692" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1482, 171)
+
+[node name="IsoPlot693" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1550, 137)
+
+[node name="IsoPlot694" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1619, 103)
+
+[node name="IsoPlot695" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1687, 69)
+
+[node name="IsoPlot696" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1551, 204)
+
+[node name="IsoPlot697" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1619, 170)
+
+[node name="IsoPlot698" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1688, 136)
+
+[node name="IsoPlot699" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1756, 102)
+
+[node name="IsoPlot700" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1618, 235)
+
+[node name="IsoPlot701" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1686, 201)
+
+[node name="IsoPlot702" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1755, 167)
+
+[node name="IsoPlot703" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1823, 133)
+
+[node name="IsoPlot704" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1139, 274)
+
+[node name="IsoPlot705" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1207, 240)
+
+[node name="IsoPlot706" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1276, 206)
+
+[node name="IsoPlot707" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1344, 172)
+
+[node name="IsoPlot708" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1206, 305)
+
+[node name="IsoPlot709" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1274, 271)
+
+[node name="IsoPlot710" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1343, 237)
+
+[node name="IsoPlot711" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1411, 203)
+
+[node name="IsoPlot712" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1275, 338)
+
+[node name="IsoPlot713" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1343, 304)
+
+[node name="IsoPlot714" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1412, 270)
+
+[node name="IsoPlot715" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1480, 236)
+
+[node name="IsoPlot716" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1342, 369)
+
+[node name="IsoPlot717" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1410, 335)
+
+[node name="IsoPlot718" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1479, 301)
+
+[node name="IsoPlot719" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1547, 267)
+
+[node name="IsoPlot820" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1684, 269)
+
+[node name="IsoPlot821" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1752, 235)
+
+[node name="IsoPlot822" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1821, 201)
+
+[node name="IsoPlot824" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1751, 300)
+
+[node name="IsoPlot825" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1819, 266)
+
+[node name="IsoPlot828" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1820, 333)
+
+[node name="IsoPlot836" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1408, 403)
+
+[node name="IsoPlot837" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1476, 369)
+
+[node name="IsoPlot838" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1545, 335)
+
+[node name="IsoPlot839" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1613, 301)
+
+[node name="IsoPlot840" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1475, 434)
+
+[node name="IsoPlot841" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1543, 400)
+
+[node name="IsoPlot842" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1612, 366)
+
+[node name="IsoPlot843" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1680, 332)
+
+[node name="IsoPlot844" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1544, 467)
+
+[node name="IsoPlot845" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1612, 433)
+
+[node name="IsoPlot846" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1681, 399)
+
+[node name="IsoPlot847" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1749, 365)
+
+[node name="IsoPlot848" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1611, 498)
+
+[node name="IsoPlot849" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1679, 464)
+
+[node name="IsoPlot850" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1748, 430)
+
+[node name="IsoPlot851" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1816, 396)
+
+[node name="IsoPlot868" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1677, 536)
+
+[node name="IsoPlot869" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1745, 502)
+
+[node name="IsoPlot870" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1814, 468)
+
+[node name="IsoPlot872" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1744, 567)
+
+[node name="IsoPlot873" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1812, 533)
+
+[node name="IsoPlot876" parent="PlotsContainer" instance=ExtResource("3_hdrv3")]
+position = Vector2(1813, 600)
+
+[connection signal="pressed" from="ReturnToMap" to="." method="_on_return_button_pressed"]

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BuildingLevelData" load_steps=2 format=3 uid="uid://bjupnt5sf6jkf"]
+
+[ext_resource type="Script" uid="uid://cwbd7n3np8ers" path="res://scripts_backup/scripts/building_level_data.gd" id="1_3881g"]
+
+[resource]
+script = ExtResource("1_3881g")
+scrap_cost = 100
+wood_cost = 100
+metadata/_custom_type_script = "uid://cwbd7n3np8ers"

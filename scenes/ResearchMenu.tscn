@@ -1,0 +1,58 @@
+[gd_scene load_steps=2 format=3 uid="uid://da6ac3uysvw74"]
+
+[ext_resource type="Script" uid="uid://cu6nc1kqbdn7" path="res://scenes/research_menu.gd" id="1_dmfvq"]
+
+[node name="Research" type="CanvasLayer"]
+script = ExtResource("1_dmfvq")
+
+[node name="Panel" type="Panel" parent="."]
+custom_minimum_size = Vector2(300, 150)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -75.0
+offset_right = 150.0
+offset_bottom = 75.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer"]
+layout_mode = 2
+text = "Evoltion Lab"
+
+[node name="DnaInfoLabel" type="Label" parent="Panel/VBoxContainer"]
+layout_mode = 2
+
+[node name="BtnUpgradeSoldier" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+text = "Evolve Soldier (+1 power): Cost 50 DNA "
+
+[node name="BtnUnlockTank" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+text = "Unlock Tank"
+
+[node name="BtnEfficiency" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+text = "-200 DNA efficiency"
+
+[node name="BtnUnlockRanger" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+text = "Unlock Ranger"
+
+[node name="BtnClose" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+text = "Close"
+
+[connection signal="pressed" from="Panel/VBoxContainer/BtnUpgradeSoldier" to="." method="_on_btn_upgrade_soldier_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/BtnUnlockTank" to="." method="_on_btn_unlock_tank_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/BtnEfficiency" to="." method="_on_btn_efficiency_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/BtnUnlockRanger" to="." method="_on_btn_unlock_ranger_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/BtnClose" to="." method="_on_btn_close_pressed"]

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="TroopData" load_steps=2 format=3 uid="uid://kq5uf26so273"]
+
+[ext_resource type="Script" uid="uid://icnrotoj4d3p" path="res://scripts_backup/scripts/TroopData.gd" id="1_nkmf0"]
+
+[resource]
+script = ExtResource("1_nkmf0")
+troop_name = "Vigilante"
+troop_class = "Vigilantes"
+base_attack = 50.0
+base_defense = 20.0
+base_health = 100.0
+base_power_value = 10
+metadata/_custom_type_script = "uid://icnrotoj4d3p"

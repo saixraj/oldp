@@ -1,0 +1,109 @@
+[gd_scene load_steps=3 format=3 uid="uid://mwc0u6b3g0b1"]
+
+[ext_resource type="Texture2D" uid="uid://clbyaqcs5jo83" path="res://Gemini_Generated_Image_86ll7t86ll7t86ll.png" id="2_l8kh1"]
+
+[sub_resource type="GDScript" id="GDScript_y2wwp"]
+script/source = "# WorldMap.gd
+extends Node2D
+
+# --- CONFIGURATION (ADJUST THESE TO YOUR ART) ---
+# NOTE: These must match the visual size of the diamond shapes in your final texture.
+var tile_width = 128   
+var tile_height = 64  
+# The total pixel size of the MapTexture image (e.g., your 4096x4096 file)
+const MAP_WIDTH = 4096 
+const MAP_HEIGHT = 4096
+
+# --- NODE REFERENCES ---
+# Assuming MapTexture is a Sprite2D child of this node
+@onready var map_texture: Sprite2D = $MapTexture
+@onready var camera: Camera2D = $Camera2D
+
+# --- MOVEMENT STATE ---
+var is_dragging = false
+var drag_start_pos = Vector2.ZERO # Mouse position when drag started
+var camera_start_pos = Vector2.ZERO # Camera position when drag started
+
+func _ready():
+	# 1. Initialize Map Texture
+	map_texture.texture.set_size_override(Vector2(MAP_WIDTH, MAP_HEIGHT))
+	
+	# 2. Set Camera Bounds
+	# This ensures the camera cannot scroll off the edge of the 4096x4096 map.
+	camera.limit_left = 0
+	camera.limit_top = 0
+	camera.limit_right = MAP_WIDTH
+	camera.limit_bottom = MAP_HEIGHT
+	
+	# 3. Center the Camera on the middle of the map
+	camera.position = Vector2(MAP_WIDTH / 2, MAP_HEIGHT / 2)
+
+
+# --- INPUT HANDLING (Click and Drag) ---
+
+func _input(event):
+	if event is InputEventMouseButton:
+		if event.button_index == MOUSE_BUTTON_LEFT:
+			if event.pressed:
+				# Start Drag
+				is_dragging = true
+				drag_start_pos = event.position # Mouse position on screen
+				camera_start_pos = camera.position # Camera's current world position
+			else:
+				# End Drag
+				is_dragging = false
+				
+	if event is InputEventMouseMotion:
+		if is_dragging:
+			# Calculate the difference between current mouse pos and start pos
+			var drag_delta = event.position - drag_start_pos
+			
+			# Move the camera in the opposite direction of the mouse drag
+			# Note: We don't need to clamp here, as Camera2D limits handle the bounds.
+			camera.position = camera_start_pos - drag_delta
+
+	# --- GRID INTERACTION (Clicking the Map) ---
+	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_RIGHT:
+		# Get mouse position in the world coordinates (relative to the camera)
+		var mouse_pos = camera.get_global_mouse_position()
+		var grid_pos = pixel_to_iso(mouse_pos)
+		
+		print(\"--- MAP INTERACT ---\")
+		print(\"Clicked World Position: \", mouse_pos)
+		print(\"Converted Grid Coordinate: \", grid_pos)
+
+
+# --- THE ISOMETRIC MATH CORE ---
+
+# Converts World Pixels -> Isometric Grid Coordinates (For Logic)
+func pixel_to_iso(pixel_coords: Vector2) -> Vector2:
+	var half_width = tile_width * 0.5
+	var half_height = tile_height * 0.5
+	
+	# Standard diamond projection math
+	var iso_x = (pixel_coords.x / half_width + pixel_coords.y / half_height) * 0.5
+	var iso_y = (pixel_coords.y / half_height - (pixel_coords.x / half_width)) * 0.5
+	
+	# Return the integer grid cell
+	return Vector2(floor(iso_x), floor(iso_y))
+
+# Converts Isometric Grid Coordinates -> World Pixels (For Placement)
+func iso_to_pixel(grid_coords: Vector2) -> Vector2:
+	var half_width = tile_width * 0.5
+	var half_height = tile_height * 0.5
+	
+	var x = (grid_coords.x - grid_coords.y) * half_width
+	var y = (grid_coords.x + grid_coords.y) * half_height
+	
+	# Return the center pixel position of the cell
+	return Vector2(x, y)
+"
+
+[node name="WorldMap" type="Node2D"]
+script = SubResource("GDScript_y2wwp")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="MapTexture" type="Sprite2D" parent="."]
+texture = ExtResource("2_l8kh1")
+centered = false

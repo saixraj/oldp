@@ -1,0 +1,51 @@
+[gd_scene load_steps=4 format=3 uid="uid://cvnsx2l84t5il"]
+
+[ext_resource type="Texture2D" uid="uid://df1dgkjo3bs00" path="res://Gemini_Generated_Image_9d8u3b9d8u3b9d8u-removebg-preview.png" id="1_owo56"]
+[ext_resource type="Script" uid="uid://hsqqpvc75j1i" path="res://scenes/rival_base.gd" id="1_vagrn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cid45"]
+size = Vector2(182, 167)
+
+[node name="RivalBase" type="Area2D"]
+script = ExtResource("1_vagrn")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(16, -105)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_owo56")
+
+[node name="NameLabel" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -34.0
+offset_top = 15.0
+offset_right = 138.0
+offset_bottom = 76.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+text = "Player123"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(15, -86.5)
+shape = SubResource("RectangleShape2D_cid45")
+
+[node name="LevelLabel" type="Label" parent="."]
+offset_left = -19.0
+offset_top = 37.0
+offset_right = 35.0
+offset_bottom = 60.0
+text = "Level 2"
+
+[node name="RecoveryTimer" type="Timer" parent="."]
+wait_time = 10.0
+one_shot = true
+
+[node name="TimerLabel" type="Label" parent="."]
+offset_left = -17.0
+offset_top = 60.0
+offset_right = 23.0
+offset_bottom = 83.0

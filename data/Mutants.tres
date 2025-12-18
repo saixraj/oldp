@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="TroopData" load_steps=2 format=3 uid="uid://htqolowrtwc7"]
+
+[ext_resource type="Script" uid="uid://icnrotoj4d3p" path="res://scripts_backup/scripts/TroopData.gd" id="1_4uqt2"]
+
+[resource]
+script = ExtResource("1_4uqt2")
+base_power_value = 10
+metadata/_custom_type_script = "uid://icnrotoj4d3p"

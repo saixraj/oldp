@@ -1,0 +1,41 @@
+[gd_scene load_steps=10 format=3 uid="uid://do5qbvqax735o"]
+
+[ext_resource type="Script" uid="uid://b1n4ie6ilov7y" path="res://scripts_backup/scripts/Main.gd" id="1_elqb8"]
+[ext_resource type="PackedScene" uid="uid://hggre1ttyim1" path="res://scenes/WorldMap.tscn" id="2_rvslj"]
+[ext_resource type="PackedScene" uid="uid://ntjaaud55tuh" path="res://scenes/GameUI.tscn" id="3_0bbpv"]
+[ext_resource type="PackedScene" uid="uid://uh0os1q211eu" path="res://scenes/InnerBase.tscn" id="4_rarhs"]
+[ext_resource type="PackedScene" uid="uid://3x5hfj084rl1" path="res://scenes/ArmyViewer.tscn" id="5_vcsgt"]
+[ext_resource type="PackedScene" uid="uid://dnf8tgnk6e248" path="res://scenes/BattleResult.tscn" id="7_jlsqs"]
+[ext_resource type="PackedScene" uid="uid://kscx26dn7yvh" path="res://scenes/AttackMenu.tscn" id="7_nxtc6"]
+[ext_resource type="PackedScene" uid="uid://da6ac3uysvw74" path="res://scenes/ResearchMenu.tscn" id="8_jlsqs"]
+[ext_resource type="PackedScene" uid="uid://21ljjki6n4xa" path="res://scenes/LeaderBoard.tscn" id="9_q8u5g"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_elqb8")
+
+[node name="WorldMap" parent="." instance=ExtResource("2_rvslj")]
+
+[node name="GameUI" parent="." instance=ExtResource("3_0bbpv")]
+
+[node name="InnerBase" parent="." instance=ExtResource("4_rarhs")]
+
+[node name="ArmyViewer" parent="." instance=ExtResource("5_vcsgt")]
+visible = false
+
+[node name="AttackMenu" parent="." instance=ExtResource("7_nxtc6")]
+
+[node name="BattleResult" parent="." instance=ExtResource("7_jlsqs")]
+
+[node name="Research" parent="." instance=ExtResource("8_jlsqs")]
+
+[node name="RaidTimer" type="Timer" parent="."]
+wait_time = 10.0
+autostart = true
+
+[node name="LeaderBoard" parent="." instance=ExtResource("9_q8u5g")]
+
+[connection signal="request_attack_menu" from="WorldMap" to="." method="_on_world_map_request_attack_menu"]
+[connection signal="request_hero_encounter" from="WorldMap" to="." method="_on_world_map_request_hero_encounter"]
+[connection signal="request_menu" from="WorldMap" to="." method="_on_world_map_request_menu"]
+[connection signal="tile_clicked" from="WorldMap" to="." method="_on_world_map_tile_clicked"]
+[connection signal="timeout" from="RaidTimer" to="." method="_on_raid_timer_timeout"]

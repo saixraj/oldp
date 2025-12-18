@@ -1,0 +1,72 @@
+[gd_scene load_steps=2 format=3 uid="uid://dnf8tgnk6e248"]
+
+[ext_resource type="Script" uid="uid://dp1v2athp8idq" path="res://scenes/battle_result.gd" id="1_m1434"]
+
+[node name="BattleResult" type="CanvasLayer"]
+script = ExtResource("1_m1434")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="Control"]
+custom_minimum_size = Vector2(400, 300)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 5
+alignment = 1
+
+[node name="TitleLabel" type="RichTextLabel" parent="Control/Panel/VBoxContainer"]
+layout_mode = 2
+bbcode_enabled = true
+text = "VICTORY"
+fit_content = true
+
+[node name="LootLabel" type="RichTextLabel" parent="Control/Panel/VBoxContainer"]
+layout_mode = 2
+bbcode_enabled = true
+text = "Loot\" 50 scrap"
+fit_content = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="PlayerArmyReport" type="RichTextLabel" parent="Control/Panel/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+bbcode_enabled = true
+fit_content = true
+
+[node name="EnemyArmyReport" type="RichTextLabel" parent="Control/Panel/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+bbcode_enabled = true
+fit_content = true
+
+[node name="BtnViewLog" type="Button" parent="Control/Panel/VBoxContainer"]
+layout_mode = 2
+
+[node name="BtnClose" type="Button" parent="Control/Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Close"
+
+[connection signal="pressed" from="Control/Panel/VBoxContainer/BtnViewLog" to="." method="_on_btn_view_log_pressed"]
+[connection signal="pressed" from="Control/Panel/VBoxContainer/BtnClose" to="." method="_on_btn_close_pressed"]

@@ -1,0 +1,61 @@
+[gd_scene load_steps=2 format=3 uid="uid://df4gl8rvmwpa4"]
+
+[ext_resource type="Script" uid="uid://dgfpijha2546a" path="res://scenes/HeroAttackMenu.gd" id="1_y34k0"]
+
+[node name="HeroAttackMenu" type="CanvasLayer"]
+script = ExtResource("1_y34k0")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="Control"]
+custom_minimum_size = Vector2(200, 150)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -32.5
+offset_top = -60.0
+offset_right = 32.5
+offset_bottom = 60.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="TargetLabel" type="Label" parent="Control/Panel/VBoxContainer"]
+layout_mode = 2
+
+[node name="MatchupLabel" type="Label" parent="Control/Panel/VBoxContainer"]
+layout_mode = 2
+
+[node name="BtnLaunch" type="Button" parent="Control/Panel/VBoxContainer"]
+layout_mode = 2
+text = "Launch"
+
+[node name="BtnCancel" type="Button" parent="Control/Panel/VBoxContainer"]
+layout_mode = 2
+text = "Cancel"
+
+[connection signal="pressed" from="Control/Panel/VBoxContainer/BtnLaunch" to="." method="_on_btn_launch_pressed"]
+[connection signal="pressed" from="Control/Panel/VBoxContainer/BtnCancel" to="." method="_on_btn_cancel_pressed"]

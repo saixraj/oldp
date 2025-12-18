@@ -1,0 +1,101 @@
+[gd_scene load_steps=2 format=3 uid="uid://1orlaxug7p7a"]
+
+[sub_resource type="GDScript" id="GDScript_vk6mu"]
+script/source = "extends Control
+
+# References to our visual nodes
+@onready var att_bar = $AttackerHealth
+@onready var def_bar = $DefenderHealth
+@onready var log_box = $BattleLog
+@onready var start_btn = $StartButton
+
+# Load the logic script (BattleSim)
+var sim = BattleSimulator.new()
+
+# Load Data
+var vigilante_data = preload(\"res://data/Vigilante.tres\")
+var heavy_data = preload(\"res://data/Heavies.tres\")
+var mutant_data = preload(\"res://data/Mutants.tres\")
+
+func _ready():
+	start_btn.pressed.connect(_on_start_pressed)
+	log_box.add_text(\"Ready to fight!\\n\")
+
+func _on_start_pressed():
+	log_box.add_text(\"=== BATTLE STARTED ===\\n\")
+	
+	# 1. Setup Armies
+	var attacker_army = {
+		\"Commander_Might_Buff\": 1.1,
+		\"Troop_Manifest\": [ {\"data\": vigilante_data, \"quantity\": 500}, {\"data\": heavy_data, \"quantity\": 100} ]
+	}
+	var defender_army = {
+		\"Castle_Defense_Bonus\": 50.0,
+		\"Troop_Manifest\": [ {\"data\": mutant_data, \"quantity\": 600} ]
+	}
+
+	# 2. Setup Bars
+	var max_att_power = sim.calculate_total_power(attacker_army)
+	var max_def_power = sim.calculate_total_power(defender_army)
+	
+	att_bar.max_value = max_att_power
+	att_bar.value = max_att_power
+	def_bar.max_value = max_def_power
+	def_bar.value = max_def_power
+
+	# 3. Run the Loop (With visual delays!)
+	# We use 'await' here to pause between rounds so you can see the bars drop.
+	for i in range(10): # Run 10 visual turns
+		await get_tree().create_timer(0.5).timeout # Wait 0.5 seconds
+		
+		# Run one round of calculation
+		sim.run_simulation_step(attacker_army, defender_army) 
+		
+		# Update Visuals
+		var current_att = sim.calculate_total_power(attacker_army)
+		var current_def = sim.calculate_total_power(defender_army)
+		
+		att_bar.value = current_att
+		def_bar.value = current_def
+		
+		log_box.add_text(\"Round %d: Att: %d | Def: %d\\n\" % [i+1, current_att, current_def])
+		
+		if current_att <= 0 or current_def <= 0:
+			break
+			
+	log_box.add_text(\"=== BATTLE ENDED ===\\n\")
+"
+
+[node name="BattleUI" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = SubResource("GDScript_vk6mu")
+
+[node name="AttackerHealth" type="ProgressBar" parent="."]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 81.0
+offset_right = 372.0
+offset_bottom = 154.0
+
+[node name="DefenderHealth" type="ProgressBar" parent="."]
+layout_mode = 0
+offset_left = 697.0
+offset_top = 73.0
+offset_right = 1018.0
+offset_bottom = 152.0
+
+[node name="StartButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 492.0
+offset_top = 251.0
+offset_right = 568.0
+offset_bottom = 282.0
+text = "start"
+
+[node name="BattleLog" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 288.0
+offset_top = 447.0
+offset_right = 658.0
+offset_bottom = 517.0

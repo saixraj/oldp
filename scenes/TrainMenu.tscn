@@ -1,0 +1,73 @@
+[gd_scene load_steps=2 format=3 uid="uid://dh2k4u8nvwya4"]
+
+[ext_resource type="Script" uid="uid://5rpqmipekow0" path="res://scenes/train_menu.gd" id="1_gc0qn"]
+
+[node name="TrainMenu" type="CanvasLayer"]
+script = ExtResource("1_gc0qn")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+
+[node name="Panel" type="Panel" parent="Control"]
+custom_minimum_size = Vector2(300, 200)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -100.0
+offset_right = 150.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -114.0
+offset_top = -46.5
+offset_right = 114.0
+offset_bottom = 46.5
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="Control/Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Barracks Training"
+
+[node name="BtnTrainSoldier" type="Button" parent="Control/Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Train Soldier (Cost: 50 Scrap)"
+
+[node name="BtnTrainTank" type="Button" parent="Control/Panel/VBoxContainer"]
+layout_mode = 2
+text = "Train Tank (100 steel)"
+
+[node name="BtnTrainRanger" type="Button" parent="Control/Panel/VBoxContainer"]
+layout_mode = 2
+
+[node name="BtnClose" type="Button" parent="Control/Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Close
+"
+
+[connection signal="pressed" from="Control/Panel/VBoxContainer/BtnTrainSoldier" to="." method="_on_btn_train_soldier_pressed"]
+[connection signal="pressed" from="Control/Panel/VBoxContainer/BtnTrainTank" to="." method="_on_btn_train_tank_pressed"]
+[connection signal="pressed" from="Control/Panel/VBoxContainer/BtnTrainRanger" to="." method="_on_btn_train_ranger_pressed"]
+[connection signal="pressed" from="Control/Panel/VBoxContainer/BtnClose" to="." method="_on_btn_close_pressed"]

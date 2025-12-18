@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bnnnj22511ut1"]
+
+[ext_resource type="Script" uid="uid://bi61xx3ef4s25" path="res://scenes/Building_MCC.gd" id="1_2yv6h"]
+[ext_resource type="Texture2D" uid="uid://df1dgkjo3bs00" path="res://Gemini_Generated_Image_9d8u3b9d8u3b9d8u-removebg-preview.png" id="1_5du2e"]
+
+[node name="Building_MCC" type="Area2D"]
+script = ExtResource("1_2yv6h")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(6, -19)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_5du2e")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(-8, 116)
+polygon = PackedVector2Array(-79, -164, -84, -65, -6, -22, 109, -77, 104, -153, 12, -201, -7, -209)

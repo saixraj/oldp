@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=3 uid="uid://dvu471dp0xwp"]
+
+[ext_resource type="Script" uid="uid://wfl4g61fqqum" path="res://scenes/log_viewer.gd" id="1_d6fk6"]
+
+[node name="LogViewer" type="PanelContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_d6fk6")
+
+[node name="VBoxRoot" type="VBoxContainer" parent="."]
+layout_mode = 2
+alignment = 1
+
+[node name="TitleLabel" type="Label" parent="VBoxRoot"]
+layout_mode = 2
+text = "Detailed Combat Log"
+
+[node name="Scroll" type="ScrollContainer" parent="VBoxRoot"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="LogRichText" type="RichTextLabel" parent="VBoxRoot/Scroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+bbcode_enabled = true
+fit_content = true
+
+[node name="BtnClose" type="Button" parent="VBoxRoot"]
+layout_mode = 2
+text = "Close"
+
+[connection signal="pressed" from="VBoxRoot/BtnClose" to="." method="_on_btn_close_pressed"]
